@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { LoginComponent } from './login/login.component';
 import { ThemeComponent } from './theme/theme.component';
-import { AdministrationComponent } from './pages/administration/administration.component';
 
 export const routes: Routes = [{
     path: 'login',
@@ -23,6 +22,10 @@ export const routes: Routes = [{
         {
             path: '',
             loadChildren:'./pages/setting/setting.module#SettingModule'
+        },
+        {
+            path: '',
+            loadChildren:'./pages/biblioteca/biblioteca.module#BibliotecaModule'
         }
     ]
 
